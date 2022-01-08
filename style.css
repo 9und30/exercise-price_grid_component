@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.box {
+    width: 555px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-top {
+    background-color: white;
+    width: 100%;
+    height: 45%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box-top h2 {
+    color: hsl(179, 62%, 43%);
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.box-top h3 {
+    padding: 1rem 0 0 2rem;
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box-top p {
+    padding: 0.75rem 2rem 0 2rem;
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+}
+
+.box-bottom {
+    display: flex;
+    width: 100%;
+    height: 55%;
+}
+
+.bottom-left {
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+}
+
+.bottom-right {
+    width: 50%;
+    background-color: hsl(179, 55%, 62%);
+    border-radius: 0 0 10px 0;
+}
+
+.bottom-left h3 {
+    padding: 2rem 0 0 2rem;
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.bottom-left h2 {
+    font-weight: 700;
+    padding: 1rem 0 0 2rem;
+    color:hsl(204, 43%, 93%);
+    font-size: 2rem;
+    display :table;
+}
+
+.bottom-left span {
+    font-size: 1rem;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0.5rem;
+}
+
+.bottom-left p {
+    padding: 0.5rem 0 0 2rem;
+    color:hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.bottom-left button {
+    background-color: hsl(71, 73%, 54%);
+    color:hsl(204, 43%, 93%);
+    font-weight: 700;
+    border: none;
+    margin: 1.5rem 2rem 0 2rem;
+    width: 75%;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-left button:hover {
+    background-color: hsl(71, 67%, 52%);
+}
+
+.bottom-right h3 {
+    padding: 2rem 0 0 2rem;
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.bottom-right p {
+    padding: 0.75rem 0 0 2rem;
+    color:hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+}
+
+@media screen and (max-width: 555px) {
+    .box {
+        width: 335px;
+        height: 655px;
+    }
+    .box-top {
+        height: 225px;
+    }
+    .box-bottom {
+        display: grid;
+        width: 100%;
+        padding-bottom: 200px;
+    }
+    .bottom-left {
+        border-radius: 0;
+        width: 100%;
+        height: 220px;
+    }
+    .bottom-right {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        height: 210px;
+        margin-bottom: 100px;
+    }
+}
